@@ -1,4 +1,4 @@
-# Streamlined
+# Streamline
 
 A WordPress foundation using Bootstrap, Materialize, CMB2.
 
