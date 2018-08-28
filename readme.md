@@ -8,7 +8,7 @@ A WordPress foundation using Bootstrap, Materialize, CMB2.
 
 Then add me to your `wp-content` directory.
 
-### 2. Rename the `streamlined-master` directory
+### 2. Rename the `streamline-master` directory
 
 Make sure that the theme directory name is project appropriate!
 
