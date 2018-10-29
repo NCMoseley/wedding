@@ -1,8 +1,10 @@
 {
-  "name": "redstarter",
+  "name": "streamline",
   "version": "1.0.0",
   "description": "A starter theme for Nate and Ilya, based on Underscores.",
   "main": "gulpfile.js",
+  "author": "ncmoseley",
+  "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.23.6",
@@ -20,15 +22,5 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/redacademy/redstarter.git"
-  },
-  "author": "mandiwise",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
-  },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  }
 }

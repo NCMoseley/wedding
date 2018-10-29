@@ -416,11 +416,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #fff; }
   a:visited {
-    color: purple; }
+    color: #f8c006; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #ad8e00; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -665,7 +665,52 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.widget-area a {
+  color: #fff !important; }
+
+.site-info {
+  display: none; }
+
+/* Welcome */
+.welcome {
+  background-image: url("../../assets/background1.png");
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 1000px;
+  margin-top: -350px;
+  margin-left: -350px; }
+
 /* Front page */
+/* Page */
+.page {
+  background-color: white;
+  color: white; }
+  .page .entry-header {
+    padding: 10px;
+    color: #fcc406; }
+  .page .border-box {
+    padding: 20px; }
+  .page .entry-content {
+    border: solid 1px darkslateblue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px;
+    color: #ad8e00; }
+  .page .content-border-box {
+    padding: 20px;
+    background-color: antiquewhite; }
+  .page .content {
+    border: solid 3px #f8c006;
+    padding: 100px;
+    background-color: antiquewhite; }
+
 /*!
  * Materialize v1.0.0-rc.2 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
@@ -2512,7 +2557,6 @@ a {
   box-shadow: none !important; }
 
 .z-depth-1,
-nav,
 .card-panel,
 .card,
 .toast,
@@ -3794,7 +3838,7 @@ table span.badge {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: transparent;
   width: 100%;
   height: 56px;
   line-height: 56px; }

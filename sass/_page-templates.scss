@@ -1,5 +1,68 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.widget-area {
+  a {
+    color: $color__link !important;
+  }
+}
+
+.site-info {
+  display: none;
+}
+
+
+
+/* Welcome */
+
+.welcome {
+  background-image: url('../../assets/background1.png');
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 1000px;
+  margin-top: -350px;
+  margin-left: -350px;
+}
 
 /* Front page */
+
+
+
+/* Page */
+
+
+.page {
+  background-color: white;
+  color: white;
+
+  .entry-header {
+    padding: 10px;
+    color: #fcc406;
+  }
+
+  .border-box {
+    padding: 20px;
+  }
+
+  .entry-content {
+    border: solid 1px darkslateblue;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: #ad8e00;
+  }
+
+  .content-border-box {
+    padding: 20px;
+    background-color: antiquewhite;
+  }
+
+  .content {
+    border: solid 3px #f8c006;
+    padding: 100px;
+    background-color: antiquewhite;
+  }
+}

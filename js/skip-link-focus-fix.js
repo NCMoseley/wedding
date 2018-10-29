@@ -39,3 +39,26 @@
     );
   }
 })();
+
+//  Welcome Image
+jQuery(document).ready(function($) {
+
+if ($(window).width() > 769) {
+  $(document).ready(function() {
+    var isshow = sessionStorage.getItem('isshow');
+    if (isshow === null) {
+      sessionStorage.setItem('isshow', 1);
+      document.documentElement.style.overflow = 'hidden'; // firefox, chrome
+      document.body.scroll = 'no'; // ie only
+      $('#welcome')
+        .show()
+        .delay(4000)
+        .fadeOut(2000, function() {
+          // will run upon fadeout completion
+          document.documentElement.style.overflow = 'auto'; // firefox, chrome
+          document.body.scroll = 'yes'; // ie only
+        });
+    }
+  });
+}
+});

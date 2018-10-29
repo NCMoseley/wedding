@@ -11,7 +11,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 
-
       
 
 
@@ -20,5 +19,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
+<!-- <?php get_sidebar(); ?> -->
 <?php get_footer(); ?>
