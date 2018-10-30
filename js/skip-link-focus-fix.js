@@ -66,15 +66,14 @@ jQuery(document).ready(function($) {
       // $('#hero-banner').delay(5000).fadeIn(1000).delay(5000).fadeOut(1000);
     });
   }
-
-  var now = moment(); // new Date().getTime();
-  var then = moment('20190907', 'YYYYMMDD'); // new Date(now + 60 * 1000);
-
+//  Countdown timers
+  var now = moment();
+  var then = moment('20190907', 'YYYYMMDD');
   $('.now').text(moment(now).format('YYYYMMDD'));
   $('.then').text(moment(then).format('YYYYMMDD'));
   $('.duration').text(moment(now).to(then));
   (function timerLoop() {
-    $('.difference > span').text(moment().to(then));
+    $('.difference > span').text(then.diff(now, 'days'));
     $('.countdown').text(countdown(then).toString());
     requestAnimationFrame(timerLoop);
   })();

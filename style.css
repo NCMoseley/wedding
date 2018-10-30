@@ -420,11 +420,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #fff; }
+  color: #404040; }
   a:visited {
-    color: #f8c006; }
+    color: #444444; }
   a:hover, a:focus, a:active {
-    color: #ad8e00; }
+    color: #FFC67E; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -683,8 +683,41 @@ html {
   clear: both;
   width: 100%; }
   .main-navigation .countdown {
+    text-align: right;
     color: black;
     font-family: "Pacifico", cursive; }
+
+.difference {
+  position: absolute;
+  top: calc(124px + 60 * ((100vw - 1000px) / 1440));
+  -webkit-transform: translateY(-22%);
+          transform: translateY(-22%);
+  color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "Cinzel", serif; }
+  .difference span {
+    color: white;
+    font-size: 26px;
+    line-height: 0.7; }
+  @media (min-width: 1170px) {
+    .difference {
+      color: white; }
+      .difference span {
+        font-size: 26px;
+        line-height: 0.7; } }
+  @media (min-width: 1440px) {
+    .difference {
+      top: 144px; } }
 
 /* Welcome */
 /* Front page */

@@ -27,8 +27,42 @@ html {
   width: 100%;
 
   .countdown {
+    text-align: right;
+    // width: 300px;
     color: black;
     font-family: $pacifico;
+  }
+}
+
+.difference {
+  position: absolute;
+  top: calc(124px + 60 * ((100vw - 1000px) / 1440));
+  // left: calc(479px + 720 * ((100vw - 1000px) / 1440));
+  transform: translateY(-22%);
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: $cinzel;
+
+  span {
+    color: white;
+    font-size: 26px;
+    line-height: 0.7;
+  }
+
+  @media (min-width: 1170px) {
+    color: white;
+
+    span {
+      font-size: 26px;
+      line-height: 0.7;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    top: 144px;
   }
 }
 
@@ -109,6 +143,7 @@ html {
   background-position: top center;
   background-repeat: no-repeat;
   // height: 1000px;
+  // min-width: 1440px;
   display: flex;
   justify-content: center;
 
