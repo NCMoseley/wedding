@@ -1,68 +1,151 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.widget-area {
-  a {
-    color: $color__link !important;
-  }
+
+html {
+  max-width: 1440px;
+  margin: 0 auto;
 }
+
 
 .site-info {
   display: none;
 }
 
+.widget-area {
+  // position: absolute;
+  // bottom: 50px;
+  // a {
+  //   color: $color__link !important;
+  // }
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: center;
+  clear: both;
+  width: 100%;
+
+  .countdown {
+    color: black;
+    font-family: $pacifico;
+  }
+}
 
 
 /* Welcome */
 
-.welcome {
-  background-image: url('../../assets/background1.png');
-  background-size: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 700px;
-  height: 1000px;
-  margin-top: -350px;
-  margin-left: -350px;
-}
+// .welcome {
+//   display: none;
+//   background-image: url('../../assets/background1.png');
+//   background-size: cover;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 700px;
+//   height: 1000px;
+//   margin-top: -350px;
+//   margin-left: -350px;
+// }
+
+
 
 /* Front page */
+.page-id-14 {
+
+  .hero-banner {
+    margin-top: -170px;
+    // display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 45vh;
+    position: fixed;
+    background-color: #fff;
+    clip-path: polygon(0 0,
+      /* left top */
+      100% 0,
+      /* right top */
+      100% 20%,
+      /* right bottom */
+      0 100%
+      /* left bottom */
+      );
+    background-image: url('../../assets/hanauma.jpg');
+    background-size: cover;
+    // background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1 {
+      color: #fff;
+      font-size: 130px;
+      font-family: $pacifico;
+      -webkit-text-stroke: 2px darkblue;
+      position: fixed;
+      top: 80px;
+      left: 50px;
+      transform: rotate(-13deg);
+    }
+  }
+
+  // h1 {
+  //   color: rgb(0, 68, 255);
+  //   font-size: 80px;
+  //   position: fixed;
+  //   top: 100px;
+  //   left: 20px;
+  // }
+}
 
 
 
 /* Page */
 
 
-.page {
-  background-color: white;
-  color: white;
+.site-main {
+  // background-color: white;
+  background-image: url('../../assets/main-background.png');
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  // height: 1000px;
+  display: flex;
+  justify-content: center;
+
 
   .entry-header {
-    padding: 10px;
-    color: #fcc406;
-  }
+    padding-top: 100px;
+    font-family: $cinzel;
+    display: flex;
+    justify-content: center;
 
-  .border-box {
-    padding: 20px;
+    .entry-title {
+      margin: 0;
+      padding: 0;
+      margin-top: 20px;
+    }
   }
 
   .entry-content {
-    border: solid 1px darkslateblue;
+    border: solid 1px darkolivegreen;
     display: flex;
     justify-content: center;
     padding: 30px;
-    color: #ad8e00;
-  }
+    color: #094e0e;
+    height: 600px;
+    // width: 700px;
+    margin-left: calc(200px + 150 * ((100vw - 1000px) / 1440));
+    margin-right: calc(200px + 150 * ((100vw - 1000px) / 1440));
 
-  .content-border-box {
-    padding: 20px;
-    background-color: antiquewhite;
+    @media (min-width: 1440px) {
+      margin-left: 245px;
+      margin-right: 245px;
+    }
   }
 
   .content {
-    border: solid 3px #f8c006;
+    // border: solid 3px rgb(41, 51, 23);
     padding: 100px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 249, 242);
   }
 }

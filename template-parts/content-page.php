@@ -11,19 +11,21 @@
 	<header class="entry-header">
 		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 	</header><!-- .entry-header -->
-    <div class="border-box">
+		<!-- <div id="hero-banner" class="hero-banner"><h1>Your next vacation!</h1></div> -->
+		<!-- <div class="difference">The timer is set to go off <span></span></div> -->
+		
 	<div class="entry-content">
 		 <div class="content-border-box">
 		 		<div class="content">
 		   			<?php the_content(); ?>
 		 		</div>
 		</div>
-		<?php
+		
+	</div><!-- .entry-content -->
+	<?php
             wp_link_pages(array(
                 'before' => '<div class="page-links">' . esc_html('Pages:'),
                 'after'  => '</div>',
             ));
         ?>
-	</div><!-- .entry-content -->
-	</div><!-- .border-box -->
 </article><!-- #post-## -->

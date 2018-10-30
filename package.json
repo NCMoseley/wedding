@@ -5,7 +5,11 @@
   "main": "gulpfile.js",
   "author": "ncmoseley",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "countdown": "^2.6.0",
+    "moment": "^2.22.2",
+    "moment-countdown": "0.0.3"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
