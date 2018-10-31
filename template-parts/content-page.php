@@ -15,9 +15,7 @@
 		</header><!-- .entry-header -->
 		<!-- <div id="hero-banner" class="hero-banner"><h1>Your next vacation!</h1></div> -->
 		<div class="entry-content">
-			<div class="content">
 				<?php the_content(); ?>
-			</div>
 		</div><!-- .entry-content -->
 	</div>
 	<?php

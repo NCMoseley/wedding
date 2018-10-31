@@ -11,9 +11,10 @@
 
 /* general style for the form */
 .nl-form {
+	/* background-color: #58a199; */
 	width: 100%;
 	margin: 0.3em auto 0 auto;
-	font-size: 4em;
+	/* font-size: 4em; */
 	line-height: 1.5;
 }
 
@@ -172,30 +173,36 @@
 
 /* custom placeholder color */
 input::-webkit-input-placeholder {
-	color: rgba(255,255,255,0.8);
+	/* color: rgba(255,255,255,0.8); */
+	color: #FFC67E;
 }
 
 input:active::-webkit-input-placeholder ,
 input:focus::-webkit-input-placeholder {
-	color: rgba(255,255,255,0.2);
+	/* color: rgba(255,255,255,0.2); */
+	color: #FFC67E;
 }
 
 input::-moz-placeholder {
-	color: rgba(255,255,255,0.8);
+	/* color: rgba(255,255,255,0.8); */
+	color: #FFC67E;
 }
 
 input:active::-moz-placeholder,
 input:focus::-moz-placeholder {
-	color: rgba(255,255,255,0.2);
+	/* color: rgba(255,255,255,0.2); */
+	color: #FFC67E;
 }
 
 input:-ms-input-placeholder {  
-	color: rgba(255,255,255,0.8);
+	/* color: rgba(255,255,255,0.8); */
+	color: #FFC67E;
 }
 
 input:active::-ms-input-placeholder ,
 input:focus::-ms-input-placeholder {
-	color: rgba(255,255,255,0.2);
+	/* color: rgba(255,255,255,0.2); */
+	color: #FFC67E;
 }
 
 /* example field below text input */

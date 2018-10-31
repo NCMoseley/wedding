@@ -773,6 +773,7 @@ html {
       padding: 0;
       margin-top: 20px; }
   .site-main .entry-content {
+    background-color: white;
     border: solid 1px darkolivegreen;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -780,6 +781,10 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 30px;
     color: #094e0e;
     height: 600px;
@@ -789,9 +794,6 @@ html {
       .site-main .entry-content {
         margin-left: 245px;
         margin-right: 245px; } }
-  .site-main .content {
-    padding: 100px;
-    background-color: #fff9f2; }
 
 /*!
  * Materialize v1.0.0-rc.2 (http://materializecss.com)
@@ -4027,7 +4029,7 @@ nav ul a {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   font-size: 1rem;
-  color: #fff;
+  color: #404040;
   display: block;
   padding: 0 15px;
   cursor: pointer; }

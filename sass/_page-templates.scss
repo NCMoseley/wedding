@@ -35,6 +35,7 @@ html {
 }
 
 .difference {
+
   position: absolute;
   top: calc(124px + 60 * ((100vw - 1000px) / 1440));
   // left: calc(479px + 720 * ((100vw - 1000px) / 1440));
@@ -162,9 +163,11 @@ html {
   }
 
   .entry-content {
+    background-color: white;
     border: solid 1px darkolivegreen;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding: 30px;
     color: #094e0e;
     height: 600px;
@@ -178,9 +181,4 @@ html {
     }
   }
 
-  .content {
-    // border: solid 3px rgb(41, 51, 23);
-    padding: 100px;
-    background-color: rgb(255, 249, 242);
-  }
 }
