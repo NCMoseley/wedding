@@ -35,9 +35,8 @@ html {
 }
 
 .difference {
-
   position: absolute;
-  top: calc(124px + 60 * ((100vw - 1000px) / 1440));
+  top: calc(94px + 60 * ((100vw - 1000px) / 1440));
   // left: calc(479px + 720 * ((100vw - 1000px) / 1440));
   transform: translateY(-22%);
   color: transparent;
@@ -65,6 +64,10 @@ html {
   @media (min-width: 1440px) {
     top: 144px;
   }
+}
+
+.subtract-height {
+  top: calc(124px + 60 * ((100vw - 1000px) / 1440));
 }
 
 
@@ -147,6 +150,10 @@ html {
   // min-width: 1440px;
   display: flex;
   justify-content: center;
+
+  article {
+  width: 100%;
+  }
 
 
   .entry-header {

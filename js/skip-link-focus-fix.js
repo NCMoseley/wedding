@@ -66,7 +66,7 @@ jQuery(document).ready(function($) {
       // $('#hero-banner').delay(5000).fadeIn(1000).delay(5000).fadeOut(1000);
     });
   }
-//  Countdown timers
+  //  Countdown timers
   var now = moment();
   var then = moment('20190907', 'YYYYMMDD');
   $('.now').text(moment(now).format('YYYYMMDD'));
@@ -77,4 +77,12 @@ jQuery(document).ready(function($) {
     $('.countdown').text(countdown(then).toString());
     requestAnimationFrame(timerLoop);
   })();
+
+  // Variable height for countdown depending on logged in status
+
+  if ($('.logged-in')[0]) {
+    $('#difference').addClass('subtract-height');
+  } else {
+    return;
+  }
 });

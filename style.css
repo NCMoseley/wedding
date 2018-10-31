@@ -689,7 +689,7 @@ html {
 
 .difference {
   position: absolute;
-  top: calc(124px + 60 * ((100vw - 1000px) / 1440));
+  top: calc(94px + 60 * ((100vw - 1000px) / 1440));
   -webkit-transform: translateY(-22%);
           transform: translateY(-22%);
   color: transparent;
@@ -718,6 +718,9 @@ html {
   @media (min-width: 1440px) {
     .difference {
       top: 144px; } }
+
+.subtract-height {
+  top: calc(124px + 60 * ((100vw - 1000px) / 1440)); }
 
 /* Welcome */
 /* Front page */
@@ -759,6 +762,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .site-main article {
+    width: 100%; }
   .site-main .entry-header {
     padding-top: 100px;
     font-family: "Cinzel", serif;
