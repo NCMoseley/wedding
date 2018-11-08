@@ -12,7 +12,7 @@
 	<header class="entry-header">
 		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 	</header><!-- .entry-header -->
-	<!-- <div id="hero-banner" class="hero-banner"><h1>Your next vacation!</h1></div> -->
+	
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->

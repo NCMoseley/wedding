@@ -10,14 +10,17 @@ a {
 	&:visited {
 		color: $color__link-visited;
 	}
+
 	&:hover,
 	&:focus,
 	&:active {
 		color: $color__link-hover;
 	}
+
 	&:focus {
 		outline: thin dotted;
 	}
+
 	&:hover,
 	&:active {
 		outline: 0;
@@ -26,14 +29,67 @@ a {
 
 /* Menus */
 
+
 .main-navigation {
-	// clear: both;
-	// display: block;
-	// float: left;
-	// width: 100%;
+	button {
+		display: none;
+	}
+
+	display: flex;
+	justify-content: center;
+	clear: both;
+	width: 100%;
+
+	@media (max-width: 800px) {
+		margin-bottom: 50px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.countdown {
+		@media (max-width: 800px) {
+			line-height: 3;
+		}
+
+		text-align: right;
+		// width: 300px;
+		color: black;
+		font-family: $pacifico;
+	}
+
+
+	.mobile-nav ul {
+		display: none;
+
+		@media screen and (max-width: 499px) {
+			display: block;
+		}
+
+		li {
+			padding-right: 10px;
+
+			a {
+				height: 50px;
+			}
+
+			i {
+				color: black;
+
+				&:hover {
+					color: #ffc67e
+				}
+			}
+		}
+	}
 
 	ul {
 		display: none;
+
+		@media screen and (min-width: 500px) {
+			display: block;
+		}
+
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -52,8 +108,9 @@ a {
 			}
 
 			li {
-				&:hover > ul,
-				&.focus > ul {
+
+				&:hover>ul,
+				&.focus>ul {
 					left: 100%;
 				}
 			}
@@ -62,53 +119,29 @@ a {
 				width: 200px;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			left: auto;
 		}
 	}
+
 	li {
 		float: left;
 		position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
 	}
+
 	a {
 		display: block;
 		text-decoration: none;
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
 
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
+@media screen and (min-width: 500px) {}
 
 .comment-navigation,
 .posts-navigation,

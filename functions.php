@@ -88,6 +88,7 @@ add_filter('stylesheet_uri', 'streamline_starter_minified_css', 10, 2);
 function streamline_starter_scripts()
 {
     wp_enqueue_style('streamline_starter-style', get_stylesheet_uri());
+    wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 
     wp_enqueue_script('materialize', get_template_directory_uri() . '/build/js/materialize.min.js', array(), true);
 
@@ -114,4 +115,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
