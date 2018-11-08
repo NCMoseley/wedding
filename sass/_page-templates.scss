@@ -14,14 +14,19 @@ html {
 
 .difference {
   position: absolute;
+  background-color: #ffc67e;
+  height: 65px;
+  width: 65px;
+  border-radius: 33px;
 
   @media (max-width: 800px) {
+    color: transparent;
     top: calc(109px + 70 * ((100vw - 320px) / 800));
   }
 
   top: calc(94px + 60 * ((100vw - 1000px) / 1440));
   transform: translateY(-22%);
-  color: transparent;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
