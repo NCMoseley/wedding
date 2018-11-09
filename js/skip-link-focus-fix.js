@@ -44,18 +44,15 @@ var countdown = countdown;
   }
 })();
 
-
 jQuery(document).ready(function($) {
- //  Welcome Image
+  //  Welcome Image
   if ($(window).width() > 880 || !$('.logged-in')[0]) {
     $(document).ready(function() {
-      //  var isshow = sessionStorage.getItem('isshow');
-      // if (isshow === null) {
-      //   sessionStorage.setItem('isshow', 1);
-      //   document.documentElement.style.overflow = 'hidden'; // firefox, chrome
-      //   document.body.scroll = 'no'; // ie only
-      $('#hero-banner').delay(5000).fadeIn(1000).delay(3000).fadeOut(1000);
-      // }
+      $('#hero-banner')
+        .delay(5000)
+        .fadeIn(1000)
+        .delay(3000)
+        .fadeOut(1000);
     });
   }
 
@@ -77,4 +74,7 @@ jQuery(document).ready(function($) {
   } else {
     return;
   }
+
+  // eslint-disable-next-line
+  var nlform = new NLForm(document.getElementById('nl-form'));
 });

@@ -360,21 +360,16 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6rem 1rem .4rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -382,9 +377,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    border-color: #aaa #bbb #bbb; }
 
 /* Fields */
 input[type="text"],
@@ -431,6 +424,11 @@ a {
     outline: 0; }
 
 /* Menus */
+nav ul a {
+  font-family: Cinzel, serif; }
+  nav ul a:hover {
+    background-color: rgba(255, 198, 126, 0.3) !important; }
+
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,7 +437,9 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   clear: both;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
   .main-navigation button {
     display: none; }
   @media (max-width: 800px) {
@@ -463,7 +463,9 @@ a {
       .main-navigation .countdown {
         line-height: 3; } }
   .main-navigation .mobile-nav ul {
-    display: none; }
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
     @media screen and (max-width: 499px) {
       .main-navigation .mobile-nav ul {
         display: block; } }
@@ -473,8 +475,8 @@ a {
         height: 50px; }
       .main-navigation .mobile-nav ul li i {
         color: black; }
-        .main-navigation .mobile-nav ul li i:hover {
-          color: #ffc67e; }
+      .main-navigation .mobile-nav ul li:hover i {
+        color: #ffc67e; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -544,7 +546,7 @@ a {
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #21759b;
+    color: #51935f;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -583,8 +585,7 @@ a {
 --------------------------------------------------------------*/
 .clearfix {
   clear: both;
-  content: "";
-  display: table; }
+  content: ""; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -702,7 +703,8 @@ object {
 --------------------------------------------------------------*/
 html {
   max-width: 1440px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow-x: hidden; }
 
 .site-info {
   display: none; }
@@ -823,6 +825,10 @@ html {
       margin: 0;
       padding: 0;
       margin-top: 20px; }
+    @media (max-width: 700px) {
+      .site-main .entry-header .entry-title {
+        margin-top: 30px;
+        font-size: 8vw; } }
   .site-main .entry-content {
     background-color: white;
     border: solid 1px darkolivegreen;
@@ -5662,23 +5668,6 @@ input[type=search]:not(.browser-default)[readonly="readonly"] + label,
 textarea.materialize-textarea:disabled + label,
 textarea.materialize-textarea[readonly="readonly"] + label {
   color: rgba(0, 0, 0, 0.42); }
-
-input:not([type]):focus:not([readonly]),
-input[type=text]:not(.browser-default):focus:not([readonly]),
-input[type=password]:not(.browser-default):focus:not([readonly]),
-input[type=email]:not(.browser-default):focus:not([readonly]),
-input[type=url]:not(.browser-default):focus:not([readonly]),
-input[type=time]:not(.browser-default):focus:not([readonly]),
-input[type=date]:not(.browser-default):focus:not([readonly]),
-input[type=datetime]:not(.browser-default):focus:not([readonly]),
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
-input[type=tel]:not(.browser-default):focus:not([readonly]),
-input[type=number]:not(.browser-default):focus:not([readonly]),
-input[type=search]:not(.browser-default):focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
-  -webkit-box-shadow: 0 1px 0 0 #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a; }
 
 input:not([type]):focus:not([readonly]) + label,
 input[type=text]:not(.browser-default):focus:not([readonly]) + label,

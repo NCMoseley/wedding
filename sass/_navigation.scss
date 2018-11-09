@@ -28,7 +28,13 @@ a {
 }
 
 /* Menus */
+nav ul a {
+	font-family: Cinzel, serif;
 
+	&:hover {
+		background-color: rgba(255, 198, 126, .3) !important;
+	}
+}
 
 .main-navigation {
 	button {
@@ -39,6 +45,7 @@ a {
 	justify-content: center;
 	clear: both;
 	width: 100%;
+	transition: all 0.3s ease-in-out 0s;
 
 	@media (max-width: 800px) {
 		margin-bottom: 50px;
@@ -53,7 +60,6 @@ a {
 		}
 
 		text-align: right;
-		// width: 300px;
 		color: black;
 		font-family: $pacifico;
 	}
@@ -61,6 +67,7 @@ a {
 
 	.mobile-nav ul {
 		display: none;
+		transition: all 0.3s ease-in-out 0s;
 
 		@media screen and (max-width: 499px) {
 			display: block;
@@ -75,8 +82,10 @@ a {
 
 			i {
 				color: black;
+			}
 
-				&:hover {
+			&:hover {
+				i {
 					color: #ffc67e
 				}
 			}
