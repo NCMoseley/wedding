@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
   if ($('.logged-in')[0]) {
     $('#difference').addClass('subtract-height');
   } else {
-    return;
+    $('#difference').addClass('');
   }
 
   // eslint-disable-next-line

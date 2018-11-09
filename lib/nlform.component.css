@@ -11,13 +11,18 @@
 
 /* general style for the form */
 .nl-form {
-	/* background-color: #58a199; */
 	width: 100%;
 	margin: 0.3em auto 0 auto;
 	font-size: 2em;
 	line-height: 1.5;
 	font-family: 'Cinzel', serif;
-	color: black
+	color: black;
+}
+
+@media screen and (min-width: 720px) {
+	.nl-form {
+		text-align: center
+	}
 }
 
 .nl-form ul {
